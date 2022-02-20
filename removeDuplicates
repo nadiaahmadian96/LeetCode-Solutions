@@ -1,0 +1,15 @@
+//Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
+
+func removeDuplicates(_ nums: inout [Int]) -> Int {
+        var result:[Int]=[]
+        for i in nums{
+            if !result.contains(i){
+                result.append(i)
+            }
+        }
+    print(result)
+        return result.count
+    }
+
+var array = [1,1,2]
+removeDuplicates(&array)
